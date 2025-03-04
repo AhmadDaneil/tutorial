@@ -20,10 +20,16 @@ class Home extends StatelessWidget{
       backgroundColor: Colors.red[600],
     ),
     body: Center(
-      child: Icon(
-        Icons.airport_shuttle,
-        color: Colors.lightBlue,
-        size: 100.0,
+      //You can use ElevatedButton, TextButton and OutlinedButton.
+      child: TextButton(
+        onPressed: () {
+          print('you clicked me');
+        },
+        style: ButtonStyle(
+          backgroundColor: MaterialStateProperty.all(Colors.red),
+          foregroundColor: MaterialStateProperty.all(Colors.white),
+        ),
+        child: Text('Click me'),
       ),
       ),
       floatingActionButton: FloatingActionButton(
