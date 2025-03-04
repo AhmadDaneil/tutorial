@@ -21,15 +21,15 @@ class Home extends StatelessWidget{
     ),
     body: Center(
       //You can use ElevatedButton, TextButton and OutlinedButton.
-      child: TextButton(
-        onPressed: () {
-          print('you clicked me');
-        },
-        style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all(Colors.red),
-          foregroundColor: MaterialStateProperty.all(Colors.white),
+      child: ElevatedButton.icon(
+        onPressed: () {},
+        icon: Icon(
+          Icons.mail,
         ),
-        child: Text('Click me'),
+        label: Text('Mailed me'),
+        style: ButtonStyle(
+          foregroundColor: MaterialStateProperty.all(Colors.amber),
+        )
       ),
       ),
       floatingActionButton: FloatingActionButton(
