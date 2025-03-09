@@ -19,16 +19,14 @@ class Home extends StatelessWidget{
       centerTitle: true,
       backgroundColor: Colors.red[600],
     ),
-    body: Center(
-      //You can use ElevatedButton, TextButton and OutlinedButton.
-      child: IconButton(
-        onPressed: () {
-          print('You clicked me');
-        },
-        icon: Icon(Icons.alternate_email),
-        color: Colors.amber,
-        ),
-      ),
+    body: Container(
+      //padding: EdgeInsets.all(20.0),
+      //padding: EdgeInsets.symmetric(horizontal:30.0, vertical: 10.0),
+      padding: EdgeInsets.fromLTRB(10.0,20.0,30.0,40.0),
+      margin: EdgeInsets.all(30.0),
+      color: Colors.grey[400],
+      child: Text('Hello'),
+    ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         backgroundColor: Colors.red[600],
